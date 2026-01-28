@@ -31,9 +31,6 @@ body {
   color: var(--text);
 }
 
-/* =====================
-   HEADER
-===================== */
 header {
   background: linear-gradient(90deg, #111827, #1f2937);
   padding: 16px 30px;
