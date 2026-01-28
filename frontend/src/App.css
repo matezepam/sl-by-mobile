@@ -78,9 +78,6 @@ h2 {
   font-weight: 700;
 }
 
-/* =====================
-   FORMULARIOS
-===================== */
 .form {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
