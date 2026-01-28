@@ -23,9 +23,6 @@
   --text: #1f2937;
 }
 
-/* =====================
-   BODY
-===================== */
 body {
   background-color: var(--bg);
   color: var(--text);
