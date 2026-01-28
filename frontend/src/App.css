@@ -181,9 +181,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-/* =====================
-   RESPONSIVE
-===================== */
+
 @media (max-width: 768px) {
   .container {
     padding: 20px;
