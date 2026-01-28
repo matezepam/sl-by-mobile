@@ -57,9 +57,6 @@ header button:hover {
   border-color: var(--primary);
 }
 
-/* =====================
-   CONTENEDOR
-===================== */
 .container {
   max-width: 1100px;
   margin: 30px auto;
