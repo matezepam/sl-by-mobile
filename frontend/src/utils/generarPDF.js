@@ -2,7 +2,7 @@ import jsPDF from "jspdf";
 
 export function generarPDF(titulo, registros) {
   const pdf = new jsPDF();
-  pdf.text(titulo, 10, 10);
+  pdf.text(titulo, 20, 20);
 
   let y = 20;
   registros.forEach((r, i) => {
