@@ -6,4 +6,11 @@ import Celulares from "./components/Celulares";
 export default function App() {
   const [vista, setVista] = useState("clientes");
 
+  return (
+    <>
+      <Header setVista={setVista} />
+      {vista === "clientes" && <Clientes />}
+      {vista === "celulares" && <Celulares />}
+    </>
+  );
 }
