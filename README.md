@@ -181,7 +181,7 @@ El proyecto está diseñado para ser presentado y defendido académicamente, dem
 
 ## 👨‍💻 Autor
 
-**Paulo**
+**Paulo Salazar**
 Proyecto académico – Gestión de Clientes y Celulares
 
 ---
