@@ -158,6 +158,32 @@ cd frontend
 npm install
 npm run dev
 ```
+---
+
+## 🧪 11. Metodología de Desarrollo
+
+* Metodología incremental
+* Control de versiones con Git
+* Commits descriptivos
 
 ---
 
+## 🎓 12. Presentación Final
+
+El proyecto está diseñado para ser presentado y defendido académicamente, demostrando:
+
+* Dominio técnico
+* Buen diseño de arquitectura
+* Uso correcto de MongoDB
+* Interfaz moderna y funcional
+
+---
+
+## 👨‍💻 Autor
+
+**Paulo**
+Proyecto académico – Gestión de Clientes y Celulares
+
+---
+
+✅ Proyecto desarrollado con enfoque profesional y académico.
