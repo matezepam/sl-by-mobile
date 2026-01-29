@@ -185,5 +185,3 @@ El proyecto está diseñado para ser presentado y defendido académicamente, dem
 Proyecto académico – Gestión de Clientes y Celulares
 
 ---
-
-✅ Proyecto desarrollado con enfoque profesional y académico.
