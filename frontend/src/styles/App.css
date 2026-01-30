@@ -33,8 +33,6 @@ body {
   min-height: 100vh;
 }
 
-/* ================= HEADER ================= */
-
 header {
   background: linear-gradient(90deg, #020617, #0f172a);
   padding: 18px 32px;
