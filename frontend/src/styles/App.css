@@ -228,8 +228,6 @@ input[type="checkbox"] {
   color: #92400e;
 }
 
-/* ================= RESPONSIVE ================= */
-
 @media (max-width: 768px) {
   header {
     flex-wrap: wrap;
