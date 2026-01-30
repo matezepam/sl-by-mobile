@@ -62,8 +62,6 @@ header button:hover {
   transform: translateY(-1px);
 }
 
-/* ================= CONTENEDOR ================= */
-
 .container {
   max-width: 1200px;
   margin: 40px auto;
