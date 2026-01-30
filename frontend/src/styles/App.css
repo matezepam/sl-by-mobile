@@ -73,8 +73,6 @@ header button:hover {
   box-shadow: var(--shadow);
 }
 
-/* ================= TITULOS ================= */
-
 h2 {
   font-size: 1.8rem;
   font-weight: 800;
