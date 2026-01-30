@@ -200,8 +200,6 @@ tbody tr:hover {
   background: #f8fafc;
 }
 
-/* ================= CHECKBOX ================= */
-
 input[type="checkbox"] {
   width: 18px;
   height: 18px;
