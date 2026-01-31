@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Clientes from "./components/Clientes";
 import Celulares from "./components/Celulares";
+import "./index.css";
 
 export default function App() {
   const [vista, setVista] = useState("clientes");
