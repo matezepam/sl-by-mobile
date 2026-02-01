@@ -2,6 +2,8 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Clientes from "./components/Clientes";
 import Celulares from "./components/Celulares";
+import Ventas from "./components/Ventas";
+import Reportes from "./components/Reportes";
 import "./index.css";
 
 export default function App() {
@@ -10,8 +12,11 @@ export default function App() {
   return (
     <>
       <Header setVista={setVista} />
+
       {vista === "clientes" && <Clientes />}
       {vista === "celulares" && <Celulares />}
+      {vista === "ventas" && <Ventas />}
+      {vista === "reportes" && <Reportes />}
     </>
   );
 }
