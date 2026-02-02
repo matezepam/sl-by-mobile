@@ -51,6 +51,11 @@ const catalogo = {
     "Realme 11 Pro": 420,
     "GT Neo 3": 610
   },
+  OnePlus: {
+    "OnePlus 9": 620,
+    "OnePlus 10 Pro": 780,
+    "OnePlus 11": 890
+  }
 };
 
 const generarCodigo = (marca, modelo) => {
