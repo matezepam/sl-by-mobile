@@ -28,9 +28,9 @@ export default function Tabla({ columnas, datos, seleccionados, setSeleccionados
           {datos.map((d, i) => (
             <tr
               key={d._id}
-              className={`transition-all
-                ${i % 2 === 0 ? "bg-white" : "bg-red-50"}
-                hover:bg-red-100`}
+              className={`transition-all ${
+                i % 2 === 0 ? "bg-white" : "bg-red-50"
+              } hover:bg-red-100`}
             >
               <td className="px-4 py-3 text-center">
                 <input
@@ -46,7 +46,7 @@ export default function Tabla({ columnas, datos, seleccionados, setSeleccionados
                   key={c}
                   className="px-4 py-3 text-center text-slate-800 font-medium"
                 >
-                  {d[c] || "-"}
+                  {d[c] ?? "-"}
                 </td>
               ))}
             </tr>
