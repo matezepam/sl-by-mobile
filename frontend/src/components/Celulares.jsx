@@ -41,6 +41,11 @@ const catalogo = {
     "Edge 30": 490,
     "Edge 40": 520
   },
+  Oppo: {
+    "Reno 8": 480,
+    "Reno 10": 520,
+    "Find X5": 720
+  },
 };
 
 const generarCodigo = (marca, modelo) => {
