@@ -5,7 +5,14 @@ import { generarPDF } from "../utils/generarPDF";
 
 export default function Clientes() {
   const [clientes, setClientes] = useState([]);
-  const [form, setForm] = useState({});
+  const [form, setForm] = useState({
+    nombres: "",
+    apellidos: "",
+    cedula: "",
+    telefono: "",
+    email: "",
+    password: ""
+  });
   const [seleccionados, setSeleccionados] = useState([]);
 
   const cargar = async () => {
@@ -19,7 +26,14 @@ export default function Clientes() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form)
     });
-    setForm({});
+    setForm({
+      nombres: "",
+      apellidos: "",
+      cedula: "",
+      telefono: "",
+      email: "",
+      password: ""
+    });
     cargar();
   };
 
@@ -54,17 +68,20 @@ export default function Clientes() {
           <input
             placeholder="Nombres"
             className={inputClass}
+            value={form.nombres}
             onChange={e => setForm({ ...form, nombres: e.target.value })}
           />
           <input
             placeholder="Apellidos"
             className={inputClass}
+            value={form.apellidos}
             onChange={e => setForm({ ...form, apellidos: e.target.value })}
           />
           <input
             placeholder="Cédula"
             maxLength="10"
             className={inputClass}
+            value={form.cedula}
             onChange={e =>
               setForm({ ...form, cedula: e.target.value.replace(/\D/g, "") })
             }
@@ -73,6 +90,7 @@ export default function Clientes() {
             placeholder="Teléfono"
             maxLength="10"
             className={inputClass}
+            value={form.telefono}
             onChange={e =>
               setForm({ ...form, telefono: e.target.value.replace(/\D/g, "") })
             }
@@ -80,6 +98,7 @@ export default function Clientes() {
           <input
             placeholder="Email"
             className={inputClass}
+            value={form.email}
             onChange={e =>
               setForm({ ...form, email: e.target.value.toLowerCase() })
             }
@@ -88,6 +107,7 @@ export default function Clientes() {
             type="password"
             placeholder="Contraseña"
             className={inputClass}
+            value={form.password}
             onChange={e => setForm({ ...form, password: e.target.value })}
           />
         </div>
@@ -118,12 +138,25 @@ export default function Clientes() {
         </button>
 
         <button
-          onClick={() =>
+          onClick={() => {
+            if (seleccionados.length === 0) {
+              alert("Selecciona al menos un cliente");
+              return;
+            }
+
             generarPDF(
               "Clientes",
-              clientes.filter(c => seleccionados.includes(c._id))
-            )
-          }
+              clientes
+                .filter(c => seleccionados.includes(c._id))
+                .map(c => ({
+                  Nombres: c.nombres,
+                  Apellidos: c.apellidos,
+                  Cedula: c.cedula,
+                  Telefono: c.telefono,
+                  Email: c.email
+                }))
+            );
+          }}
           className="px-6 py-2.5 rounded-xl bg-slate-900 text-white font-semibold hover:bg-black transition shadow"
         >
           📄 Exportar PDF
