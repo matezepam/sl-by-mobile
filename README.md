@@ -1,4 +1,4 @@
-# 📱 SL By Mobile
+# 📱 Mobile
 
 Sistema web para la **gestión de clientes y celulares**, desarrollado con **React + Node.js + MongoDB**, enfocado en buenas prácticas profesionales, arquitectura clara y una experiencia de usuario moderna.
 
@@ -6,7 +6,7 @@ Sistema web para la **gestión de clientes y celulares**, desarrollado con **Rea
 
 ## 🎯 1. Descripción del Proyecto
 
-**SL By Mobile** es una aplicación web que permite:
+**Mobile** es una aplicación web que permite:
 
 * Gestionar clientes
 * Registrar celulares asociados
