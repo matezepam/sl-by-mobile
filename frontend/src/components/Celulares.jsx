@@ -46,6 +46,11 @@ const catalogo = {
     "Reno 10": 520,
     "Find X5": 720
   },
+  Realme: {
+    "Realme 10": 290,
+    "Realme 11 Pro": 420,
+    "GT Neo 3": 610
+  },
 };
 
 const generarCodigo = (marca, modelo) => {
