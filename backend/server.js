@@ -19,5 +19,5 @@ app.use("/api/clientes", clientesRoutes);
 app.use("/api/celulares", celularesRoutes);
 
 app.listen(3001, () => {
-  console.log("🚀 Backend en http://localhost:3001");
+  console.log("🚀 BACKEND EN http://localhost:3001");
 });
