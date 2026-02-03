@@ -12,7 +12,7 @@ export function generarPDF(titulo, registros) {
   pdf.text(titulo, 50, 20);
 
   pdf.setFontSize(10);
-  pdf.text(`Fecha: ${new Date().toLocaleDateString()}`, 50, 28);
+  pdf.text(`FECHA: ${new Date().toLocaleDateString()}`, 50, 28);
 
   pdf.line(10, 42, 200, 42);
 
