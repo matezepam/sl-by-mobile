@@ -20,7 +20,7 @@ export function generarPDF(titulo, registros) {
 
   pdf.setFontSize(11);
   pdf.text("N°", 10, y);
-  pdf.text("Datos", 25, y);
+  pdf.text("DATOS", 25, y);
 
   pdf.line(10, y + 2, 200, y + 2);
 
